@@ -1,0 +1,435 @@
+/*
+Theme Name: shapely-child
+Template: shapely
+Theme URI: https://colorlib.com/wp/themes/shapely
+Author: colorlib
+Author URI: https://colorlib.com/
+Description: Shapely is a powerful and versatile one page WordPress theme with pixel perfect design and outstanding functionality. It is by far the most advanced free WordPress theme available today with loads of unmatched customization options. This theme comes with several homepage widgets that can be used to add portfolio, testimonials, parallax sections, your product or service information, call for action and much more. Shapely supports most free and premium WordPress plugins such as WooCommerce, Jetpack, Gravity Forms, Contact Form 7, Yoast SEO, Google Analytics by Yoast and much more. This theme is the best suited for business, landing page, portfolio, ecommerce, store, local business,  personal websites but can be tweaked to be used as blog, magazine or any other awesome website while highlighting its unique one page setup. This is going to be the last WordPress theme you will ever want to use because it is so much better than anything you have seen. Needless to say that this theme is SEO friendly thanks to its well optimized strucutre. Shapely theme is mobile friendly and fully responsive making it your best multipurpose partnert for any project and website.
+Version: 1.2
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shapely
+Tags: left-sidebar, right-sidebar, featured-images, post-formats, threaded-comments, theme-options, photography, portfolio, full-width-template, grid-layout
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Shapely is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/********* FONTS *********/
+@font-face {
+    font-family: 'Josefin Sans', sans-serif;;
+    src: url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+}
+
+@font-face {
+	font-family: 'Open Sans', sans-serif;
+	src:url('https://fonts.googleapis.com/css?family=Open+Sans');;
+}
+
+body, label {
+	font-family: 'Open Sans', sans-serif;
+	text-align:left;
+	font-weight: normal;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+/********* NAVIGATION *********/
+.nav-container {
+	margin-top:20px;
+}
+
+.site-title {
+	font-family: 'Josefin Sans';
+	font-size:35px;
+}
+
+.search-widget-handle {
+	display:none;
+}
+
+.menu a:hover {
+	text-decoration:none;
+}
+
+.site-title-container a:hover {
+	text-decoration: none;
+}
+
+.site-title-container span:hover {
+	color:#c99716;
+}
+
+/********* FRONT PAGE *********/
+/*** Bandeau page d'accueil mobile ***/
+#shapely_home_parallax-13 {
+	display:none;
+}
+
+/*** Carousel articles ***/
+.sow-carousel-title a.sow-carousel-next, .sow-carousel-title a.sow-carousel-previous {
+	margin-top:0px !important;
+	margin-left:5px !important;
+	font-size:7px !important;
+	line-height: 25px !important;
+	width: 25px !important;
+	background: #c99716 !important;
+	border-radius: 0px !important;
+	border:1px solid #c99716 !important;
+	color:white !important;
+}
+
+.sow-carousel-title a.sow-carousel-next:hover, .sow-carousel-title a.sow-carousel-previous:hover {
+	background:#dba518 !important;
+}
+
+.sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item .sow-carousel-thumbnail a span.overlay {
+	background: #fff !important;
+}
+
+/********* PAGES *********/
+.page-title-section {
+	text-transform:uppercase;
+	background: linear-gradient(#F7F7F7 60%, white);
+}
+
+/********* POST GRID *********/
+.pt-cv-title a {
+	font-family: 'Josefin Sans' !important;
+	text-transform: uppercase !important;
+}
+
+.pt-cv-title {
+	text-align: center !important;
+}
+
+a._self.pt-cv-href-thumbnail.pt-cv-thumb-default {
+	display:block !important;
+	position: relative !important;
+}
+
+.pt-cv-thumb-default img {
+	opacity: 1 !important;
+  	display: block !important;
+  	width: 100% !important;
+  	height: auto !important;
+  	transition: .5s ease !important;
+  	backface-visibility: hidden !important;
+}
+
+.middle {
+  transition: .5s ease-in-out !important;
+  -webkit-transition: .5s ease-in-out !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -o-transform: translate(-50%, -50%) !important;
+  text-align: center !important;
+}
+
+.pt-cv-thumb-default:hover img {
+  opacity: 0.2 !important;
+}
+
+.pt-cv-thumb-default:hover .middle {
+  opacity: 1 !important;
+}
+
+.text {
+  text-transform: uppercase !important;
+  font-family: 'Josefin Sans' !important;
+  color: #c99716 !important;
+  font-size: 14px !important;
+  padding: 15px !important;
+  border-radius: 0px !important;
+  border:1px solid #c99716 !important;
+  width:100% !important;
+}
+
+.pt-cv-wrapper .pagination > .active > a {
+	background: #c99716 !important;
+	color:white !important;
+	border-color:#c99716 !important;
+}
+
+.pt-cv-wrapper .pagination > li > a:hover {
+	color:white !important;
+}
+
+.pt-cv-wrapper .pagination > li > a {
+	color: #696969 !important;
+}
+
+.pt-cv-wrapper .pagination > li:last-child > a, .pt-cv-wrapper .pagination > li:first-child > a {
+	border-radius: 0px !important;
+}
+
+/********* POST:CHALET; *********/
+section {
+	padding:10px;
+}
+
+.shapely-next-prev {
+	display:none;
+}
+
+/*** Icônes ***/
+div.sow-features-list h5 {
+	display: none !important;
+}
+
+/*** Accordeon ***/
+.sow-accordion-title {
+	font-family:'Josefin Sans';
+	text-transform: uppercase;
+}
+
+#carac-chalet {
+	display: flex;
+	align-items: flex-start;
+}
+
+#col-1, #col-2, #col-3, #col-4 {
+	width: 25%;
+}
+
+/*** Call to action ***/
+
+a.ow-icon-placement-left.ow-button-hover:hover {
+	text-decoration:none !important;
+}
+
+/******** CONTACT FORM ********/
+#col-left {
+	float:left;
+	width:33.3%;
+	margin-right:15px;
+}
+
+#col-right {
+	float:right;
+	width:66.6%;
+}
+
+#form-btn {
+	float:right;
+}
+
+#form-responsive {
+	display:flex;
+	align-items: flex-start;
+}
+
+/******** FOOTER ********/
+
+#colophon {
+	padding-top: 30px !important;
+	padding-bottom: 10px !important;
+}
+
+.bg-dark {
+    background: #F9F9F9;
+}
+
+.footer div.copyright-text p, .footer div.footer-credits, .footer .footer-credits a {
+	font-family: 'Open sans' !important;
+	font-size:13px !important;
+}
+
+.footer div.footer-credits, .footer .footer-credits a {
+	color:#C1C1C1 !important;
+}
+
+.footer div.copyright-text p {
+	color: #696969 !important;
+}
+
+.footer div.copyright-text {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+	margin-bottom: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+/******* MEDIA QUERIES *******/
+@media all and (min-width:781px) and (max-width:991px) {
+	
+	/*** Navigation ***/
+	.module.widget-handle.search-widget-handle {
+		display:none;
+	}
+
+	/*** Chalets ***/
+
+	div.sow-features-feature.sow-icon-container-position-top.sow-features-feature-last-row {
+		width:50% !important;
+		margin-bottom: 15px !important;
+	}
+
+	/*** Contact : Coordonnées ***/
+	#pg-10-0.panel-has-style > .panel-row-style {
+		flex-direction: column !important;
+		-ms-flex-direction:column !important;
+		-webkit-flex-direction:column !important;
+		align-items: center !important;
+	}
+
+	#pgc-10-0-0, #pgc-10-0-1, #pgc-10-0-2, #pgc-10-0-3 {
+		width:calc(100% - ( 0.75 * 10px )) !important;
+		margin-bottom: 20px !important;	
+	}		
+	
+
+	/*** Formulaire de contact ***/
+	#form-responsive {
+		display:inline-block;
+	}
+
+	#col-left {
+		width:100%;
+	}
+
+	#col-right {
+		width:100%;
+	}
+
+}
+
+@media all and (min-width: 521px) and (max-width:781px) {
+	/*** Navigation ***/
+	.module.widget-handle.search-widget-handle {
+		display:none;
+	} 
+
+	/*** Chalets ***/
+	#col-1, #col-2, #col-3, #col-4 {
+		width:50%;
+	}
+
+	.sow-headline-container h4.sow-headline, .sow-headline-container h6.sow-sub-headline {
+		text-align: center !important;
+	}
+
+	/*** Contact : Formulaire de contact ***/
+	#form-responsive {
+		display:inline-block;
+	}
+
+	#col-left {
+		width:100%;
+	}
+
+	#col-right {
+		width:100%;
+	}
+
+}
+
+@media all and (max-width:521px) {
+	/*** Navigation ***/
+	.site-title {
+		font-size:25px;
+	}
+	.module.widget-handle.search-widget-handle {
+		display:none;
+	}
+
+	/*** Front page ***/
+	#sow-hero-3 {
+		display:none;
+	}
+
+	#shapely_home_parallax-13 {
+		display: initial;
+	}
+
+	#shapely_home_parallax-13 h1 {
+		font-size:25px;
+		margin-left:30px;
+		margin-right:30px;
+		padding:30px;
+		line-height: 1.5em;
+		background:radial-gradient(rgba(51,51,51,0.35), rgba(0,0,0,0)) !important;
+	}
+
+	a.btn.btn-lg {
+		font-family: 'Josefin Sans' !important;
+		border-radius:0px !important;
+		border:none !important;
+		padding:18px !important;
+		background: white !important;
+		color: #C99716 !important;
+		letter-spacing: 0 !important;
+		font-size:15px !important;
+		margin-top: 10px !important;
+	}
+
+	a.btn.btn-lg:hover {
+		background: white !important;
+		border: none !important;
+	}
+
+	#resume-agence {
+		font-size:18px !important;
+	}
+
+	h3.sow-headline {
+		font-size:20px !important;
+	}
+
+	/*** Chalets ***/
+	div.panel-grid-cell {
+		margin-bottom:10px !important;
+	}
+
+	h6.sow-sub-headline {
+		padding-bottom:15px !important;
+	}
+
+	div.so-panel.widget.widget_sow-features.panel-first-child.panel-last-child {
+		display: none;
+	}
+
+	div.sow-accordion-panel-header {
+		margin-top:-15px;
+	}
+
+	#carac-chalet {
+		display:inline;
+	}
+
+	#col-1, #col-2, #col-3, #col-4 {
+		width:100%;
+	}
+
+	.sow-headline-container h4.sow-headline, .sow-headline-container h6.sow-sub-headline {
+		text-align: center !important;
+	}
+
+	/*** Formulaire de contact ***/
+	#form-responsive {
+		display:inline-block;
+	}
+
+	#col-left {
+		width:100%;
+	}
+
+	#col-right {
+		width:100%;
+	}	
+}
