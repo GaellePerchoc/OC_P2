@@ -3,6 +3,8 @@ OpenClassrooms // Front-end developer path
 
 Approved Project
 
+http://www.gaelleperchoc.com/oc/chaletsetcaviar/
+
 ## Assignment
 "Your new client, a real estate agency in the mountains, needs a website to show the chalets they sell. You'll use WordPress to build their site!"
 
